@@ -1,0 +1,14 @@
+# Netlify configuration for Blood Donor Management System
+# React + Vite SPA with client-side routing
+
+[build]
+  # Build command to run
+  command = "cd frontend && npm install && npm run build"
+  # Directory to publish (relative to root)
+  publish = "frontend/dist"
+
+# SPA fallback - redirect all paths to index.html for client-side routing
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
